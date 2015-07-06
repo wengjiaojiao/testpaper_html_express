@@ -15,7 +15,6 @@ app.get('/', function (req, res) {
 })
 
 app.post('/result', function(req, res) {
-  console.log(req.body);
   res.render("resultshow",{
     username:req.body.name,
     userclass:req.body.class,
