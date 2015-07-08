@@ -3,3 +3,4 @@ function Question(name, answer, score) {
     this.answer = answer;
     this.score = score;
 }
+module.exports = Question;

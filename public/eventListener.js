@@ -1,5 +1,6 @@
 document.querySelector("#submit").addEventListener("click",function(evt) {
     window.scroll(0,0);
+    //evt.preventDefault();
     if(document.getElementById("class").value == "") {
         alert("请输入班级");
         evt.preventDefault();
@@ -13,6 +14,6 @@ document.querySelector("#submit").addEventListener("click",function(evt) {
         alert("请输入数字");
         evt.preventDefault();
     }else {
-        document.getElementById("score").value = AllQuestionBank.comparison();
+        document.getElementById("score").value = "";
     }
 });

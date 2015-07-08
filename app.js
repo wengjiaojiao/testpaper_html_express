@@ -2,6 +2,9 @@ var express = require('express')
 var app = express()
 var ejs = require('ejs');
 var bodyParser = require('body-parser');
+var _ = require('./public/lodash.src.js');
+var scoreGetter = require('./scoreGetter');
+
 app.use(bodyParser.urlencoded({
     extended: true
 }));
@@ -15,13 +18,19 @@ app.get('/', function (req, res) {
 })
 
 app.post('/result', function(req, res) {
+  var infors = req.body;
+  var sumScore = scoreGetter(infors);
+
+  console.log(sumScore);
+  
   res.render("resultshow",{
-    username:req.body.name,
-    userclass:req.body.class,
-    userid:req.body.id,
-    userscore:req.body.score
+    username:infors.name,
+    userclass:infors.class,
+    userid:infors.id,
+    userscore:sumScore
   })
-})
+
+});
 
 var server = app.listen(3000, function () {
 
