@@ -1,4 +1,3 @@
-//document.querySelector("#submit").addEventListener("click",function(evt) {
 $("#submit").on("click",function(evt){
     window.scroll(0,0);
     //evt.preventDefault();
