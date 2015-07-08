@@ -25,9 +25,9 @@ FormValueGetter.prototype.nameToValue = function(names) {
                         position = i;
                         addValue += element.value;
                     }
-                    if (element.type === "text" || element.type === "textarea") {
-                        addValue += element.value;
-                    }
+                    //if (element.type === "text" || element.type === "textarea") {
+                      //  addValue += element.value;
+                    //}
                 });
                 temp.name = name;
                 temp.value = addValue;
