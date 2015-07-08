@@ -4,10 +4,13 @@
     <meta charset="UTF-8">
     <title>testpaper version 1 </title>
 </head>
+<script type="text/javascript" src='./jquery-1.11.3.min.js'>
+
+</script>
 <body>
   <div id="indexleft"></div>
   <div id="indexmiddle">
-    <form action="result" name="savepaper" method="post">
+    <form action="" name="savepaper" method="post">
       <div id="title">
         <center><h1>统一建模语言理论测试</h1>
           <table>
@@ -58,27 +61,27 @@
         </table>
         <br><br>
         <h3>三、多选题</h3>
-        1、用例的粒度分为一下哪三种：<input type="text" id="answer3" size="4" readonly><p>
+        1、用例的粒度分为一下哪三种：<input type="text" id="answer3" name='check1'  size="4" readonly><p>
         <table>
-          <tr><td><input type="checkbox" name="check1" value="A" id="a3">
+          <tr><td><input type="checkbox" name="checkbox1" value="A" id="a3">
             <label for="a3">A.概述级</label></td></tr>
-          <tr><td><input type="checkbox" name="check1" value="B" id="b3">
+          <tr><td><input type="checkbox" name="checkbox1" value="B" id="b3">
             <label for="b3">B.需求级</label></td></tr>
-          <tr><td><input type="checkbox" name="check1" value="C" id="c3">
+          <tr><td><input type="checkbox" name="checkbox1" value="C" id="c3">
             <label for="c3">C.用户目标级</label></td></tr>
-          <tr><td><input type="checkbox" name="check1" value="D" id="d3">
+          <tr><td><input type="checkbox" name="checkbox1" value="D" id="d3">
             <label for="d3">D.子功能级</label></td></tr>
         </table>
         <p>
-        2、类图由以下哪三部分组成：<input type="text" id="answer4" size="4" readonly>
+        2、类图由以下哪三部分组成：<input type="text" id="answer4" name="check2" size="4" readonly>
         <table>
-          <tr><td><input type="checkbox" name="check2" value="A" id="a4">
+          <tr><td><input type="checkbox" name="checkbox2" value="A" id="a4">
             <label for="a4">A.名称(Name)</label></td></tr>
-          <tr><td><input type="checkbox" name="check2" value="B" id="b4">
+          <tr><td><input type="checkbox" name="checkbox2" value="B" id="b4">
             <label for="b4">B.属性(Attribute)</label></td></tr>
-          <tr><td><input type="checkbox" name="check2" value="C" id="c4">
+          <tr><td><input type="checkbox" name="checkbox2" value="C" id="c4">
             <label for="c4">C.操作(Operation)</label></td></tr>
-          <tr><td><input type="checkbox" name="check2" value="D" id="d4">
+          <tr><td><input type="checkbox" name="checkbox2" value="D" id="d4">
             <label for="d4">D.方法(Function)</label></td></tr>
         </table>
         <br><br>
@@ -94,7 +97,7 @@
         <textarea rows="15" cols="100" id="textarea" name="textarea"></textarea><br><br>
       </div>
       <div id="button">
-      <input id="submit" type="submit" value="提交">
+      <input id="submit" type="button" value="提交">
       <input id="reset" type="reset" value="重置">
     </div>
     </form>
@@ -102,10 +105,12 @@
   <div id="indexright"></div>
 </body>
 <link rel="stylesheet" href="./mycss.css">
-<script type="text/javascript" src="./formValueGetter.js"></script>
 <script type="text/javascript" src="./lodash.src.js"></script>
+<<<<<<< HEAD
 <script type="text/javascript" src="./question.js"></script>
 <script type="text/javascript" src="./questionBank.js"></script>
+=======
+>>>>>>> 3467554fdd8f17ab2f8dcff42d3b349388df0f8b
 <script type="text/javascript" src="./eventListener.js"></script>
 <script type="text/javascript" src="./answerDisplaer.js"></script>
 <script type="text/javascript" src="./timer.js"></script>

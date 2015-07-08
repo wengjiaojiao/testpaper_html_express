@@ -1,3 +1,5 @@
+var Question = require('./question');
+
 function AllQuestionBank() {
     return [
         new Question("gap1","统一建模语言",1),
@@ -11,6 +13,7 @@ function AllQuestionBank() {
         new Question("textarea","模型是对现实世界的简化和抽象。",5)
     ]
 }
+<<<<<<< HEAD:public/questionBank.js
 
 AllQuestionBank.comparison = function() {
   var formvaluegetter = new FormValueGetter("form");
@@ -25,3 +28,6 @@ AllQuestionBank.comparison = function() {
   });
   return sumScore;
 }
+=======
+module.exports = AllQuestionBank;
+>>>>>>> 3467554fdd8f17ab2f8dcff42d3b349388df0f8b:questionBank.js
