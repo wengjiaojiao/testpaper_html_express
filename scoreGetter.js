@@ -4,7 +4,6 @@ var _ = require("./public/lodash.src.js");
 function scoreGetter(infors){
   var questionBanks = AllQuestionBank();
   var sumScore = 0;
-  //console.log(questionBanks);
 
   _.forEach(infors,function(infor,key) {
     _.forEach(questionBanks,function(questionBank,i) {

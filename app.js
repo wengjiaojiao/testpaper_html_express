@@ -22,13 +22,8 @@ app.post('/result', function(req, res) {
   var sumScore = scoreGetter(infors);
 
   console.log(sumScore);
-  
-  res.render("resultshow",{
-    username:infors.name,
-    userclass:infors.class,
-    userid:infors.id,
-    userscore:sumScore
-  })
+  res.send(sumScore + "");
+
 
 });
 
